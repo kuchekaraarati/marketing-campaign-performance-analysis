@@ -1,122 +1,220 @@
-# marketing-campaign-performance-analysis
-# 📊 Marketing Campaign Performance Analysis (SQL + Python)
+# Marketing Campaign Performance Analysis
 
-## 📌 Project Overview
+## Project Overview
 
-This project analyzes multi-channel marketing campaign performance using SQL and Python. The objective is to evaluate campaign effectiveness, identify funnel drop-offs, and compare channel efficiency to support data-driven marketing decisions.
-
----
-
-## 🎯 Objectives
-
-* Analyze campaign performance across channels (Google Search, Meta Ads)
-* Calculate key marketing KPIs (CTR, CVR, CPC, CPA)
-* Evaluate funnel performance (Impressions → Clicks → Conversions)
-* Identify cost-efficient channels
-* Visualize performance trends over time
-* Explore basic budget optimization scenarios
+This project analyzes digital marketing campaign performance across Google Search and Meta Ads using SQL, Python, Pandas, and Matplotlib. The analysis focuses on key marketing KPIs, channel performance comparison, funnel analysis, and business recommendations to support data-driven marketing decisions.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Business Problem
 
-* **SQL** (Data extraction, KPI calculations)
-* **Python (Pandas, Matplotlib)** (Data analysis & visualization)
-* **Excel/CSV** (Dataset)
+Marketing teams invest advertising budgets across multiple channels and need to identify:
 
----
+* Which channel generates the highest engagement?
+* Which channel drives the most conversions?
+* Which channel delivers the best return on investment?
+* How users move through the marketing funnel?
 
-## 📂 Dataset
-
-* Campaign dataset containing:
-
-  * Date
-  * Channel
-  * Impressions
-  * Clicks
-  * Conversions
-  * Spend
+This project evaluates campaign effectiveness and provides insights for optimizing marketing spend.
 
 ---
 
-## 📊 KPI Definitions
+## Dataset Information
 
-* **CTR (Click Through Rate)** = Clicks / Impressions
-* **CVR (Conversion Rate)** = Conversions / Clicks
-* **CPC (Cost Per Click)** = Spend / Clicks
-* **CPA (Cost Per Acquisition)** = Spend / Conversions
+The dataset contains campaign performance data with the following fields:
 
-> Note: Revenue data was not available, so true ROAS could not be calculated.
+| Column      | Description                  |
+| ----------- | ---------------------------- |
+| Date        | Campaign Date                |
+| Channel     | Advertising Channel          |
+| Impressions | Number of Ad Views           |
+| Clicks      | Number of Ad Clicks          |
+| Conversions | Number of Successful Actions |
+| Spend       | Advertising Spend            |
 
----
+### Channels Analyzed
 
-## 🔍 Key Analysis Performed
+* Google Search
+* Meta Ads
 
-### 1. KPI Analysis
+### Dataset Size
 
-* Calculated CTR, CVR, CPC, and CPA for each channel
-* Compared performance efficiency between channels
-
-### 2. Funnel Analysis
-
-* Evaluated user journey:
-
-  * Impressions → Clicks → Conversions
-* Identified drop-off points in the funnel
-
-### 3. Channel Performance Comparison
-
-* Compared Google Search and Meta Ads based on:
-
-  * Traffic volume
-  * Conversion efficiency
-  * Cost per acquisition
-
-### 4. Trend Analysis
-
-* Visualized daily campaign performance
-* Identified consistency and performance patterns over time
+* 36 Records
+* 18 Days of Campaign Performance Data
 
 ---
 
-## 📈 Key Insights
+## Tools & Technologies
 
-* **Google Search** drives higher traffic and total conversions
-* **Meta Ads** shows higher conversion efficiency (better CVR)
-* Meta Ads achieves **lower CPA**, making it more cost-effective
-* Google shows **drop-off after clicks**, indicating potential landing page or targeting issues
-* Campaign performance is stable, with limited variation across days
-
----
-
-## 💡 Business Recommendations
-
-* Reallocate a portion of budget toward Meta Ads for better cost efficiency
-* Optimize Google Search landing pages to improve conversion rate
-* Conduct A/B testing on creatives and targeting strategies
-* Incorporate revenue tracking for accurate ROI/ROAS analysis
+* Python
+* Pandas
+* Matplotlib
+* VS Code
 
 ---
 
-## ⚠️ Limitations
+## Key Performance Indicators (KPIs)
 
-* No revenue data available → true ROAS not calculated
-* Budget optimization is conceptual, not experimentally validated
-* Limited dataset size and duration
+### CTR (Click Through Rate)
+
+CTR = Clicks ÷ Impressions × 100
+
+Measures ad engagement.
+
+### CVR (Conversion Rate)
+
+CVR = Conversions ÷ Clicks × 100
+
+Measures conversion efficiency.
+
+### CPC (Cost Per Click)
+
+CPC = Spend ÷ Clicks
+
+Measures the cost of acquiring a click.
+
+### CPA (Cost Per Acquisition)
+
+CPA = Spend ÷ Conversions
+
+Measures the cost of acquiring a conversion.
+
+### ROAS (Return on Ad Spend)
+
+ROAS = (Conversions × 100) ÷ Spend
+
+Measures return generated from advertising spend.
 
 ---
 
-## 🚀 Future Improvements
+## Funnel Analysis
 
-* Add revenue data to calculate actual ROAS
-* Perform A/B testing analysis
-* Build Power BI dashboard for interactive insights
-* Add channel-level budget allocation model
+The campaign funnel was analyzed to understand user progression through the marketing journey:
+
+Impressions → Clicks → Conversions
+
+This helps identify channel effectiveness and potential drop-off points within the customer journey.
+
+---
+
+## Visualizations Created
+
+* CTR by Channel
+* CVR by Channel
+* CPC by Channel
+* CPA by Channel
+* ROAS by Channel
+* Daily Click Trend
+* Daily Conversion Trend
+* Daily Spend Trend
+* Clicks vs Conversions by Channel
 
 ---
 
-## 📌 Conclusion
+## Channel Performance Summary
 
-This project demonstrates end-to-end marketing campaign analysis using SQL and Python, focusing on KPI evaluation, funnel analysis, and actionable business insights to support marketing optimization decisions.
+| Metric      | Google Search | Meta Ads |
+| ----------- | ------------- | -------- |
+| Impressions | 110,200       | 68,000   |
+| Clicks      | 5,605         | 2,945    |
+| Conversions | 482           | 377      |
+| Spend       | 3,390         | 2,415    |
+| CTR         | 5.09%         | 4.33%    |
+| CVR         | 8.60%         | 12.80%   |
+| CPC         | 0.60          | 0.82     |
+| CPA         | 7.03          | 6.41     |
+| ROAS        | 14.22         | 15.61    |
 
 ---
+
+## Key Findings
+
+### Google Search Performance
+
+* Generated 110,200 impressions and 5,605 clicks.
+* Achieved the highest CTR of 5.09%.
+* Maintained the lowest CPC of 0.60.
+* Produced 482 conversions.
+* Delivered a ROAS of 14.22.
+
+### Meta Ads Performance
+
+* Generated 68,000 impressions and 2,945 clicks.
+* Achieved a higher CVR of 12.80%.
+* Produced 377 conversions.
+* Recorded the lowest CPA of 6.41.
+* Delivered the highest ROAS of 15.61.
+
+---
+
+## Business Insights
+
+### Traffic Generation
+
+Google Search generated 5,605 clicks compared to 2,945 clicks from Meta Ads and achieved a higher CTR (5.09% vs 4.33%), making it the stronger channel for driving traffic.
+
+### Conversion Efficiency
+
+Meta Ads achieved a significantly higher conversion rate (12.80% vs 8.60%), indicating stronger conversion performance.
+
+### Cost Efficiency
+
+Google Search delivered clicks at a lower cost with a CPC of 0.60 compared to 0.82 for Meta Ads.
+
+### Customer Acquisition
+
+Meta Ads acquired customers more efficiently with a lower CPA of 6.41 compared to 7.03 for Google Search.
+
+### Return on Investment
+
+Meta Ads generated the highest ROAS of 15.61, outperforming Google Search at 14.22.
+
+---
+
+## Business Recommendation
+
+* Continue using Google Search for awareness and traffic generation campaigns.
+* Allocate additional budget toward Meta Ads for conversion-focused campaigns.
+* Monitor CPA and ROAS regularly to optimize advertising spend.
+* Combine both channels to balance reach, engagement, and conversions.
+
+---
+
+## Project Structure
+
+Marketing-Campaign-Performance-Analysis/
+
+├── campaign_data.csv
+├── campaign_data_analysis.py
+├── campaign_visualization.py
+├── screenshots/
+│   ├── ctr_by_channel.png
+│   ├── cvr_by_channel.png
+│   ├── cpc_by_channel.png
+│   ├── cpa_by_channel.png
+│   ├── roas_by_channel.png
+│   ├── daily_click_trend.png
+│   ├── daily_conversion_trend.png
+│   └── daily_spend_trend.png
+└── README.md
+
+---
+
+## Learning Outcomes
+
+* Marketing Analytics
+* Campaign Performance Analysis
+* KPI Reporting
+* Funnel Analysis
+* Data Visualization
+* Business Intelligence
+* Data-Driven Decision Making
+
+---
+
+## Author
+
+**Aarati Kuchekar**
+
+Data Analytics | SQL | Python | Excel | Marketing Analytics
+
