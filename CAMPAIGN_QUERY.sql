@@ -26,7 +26,7 @@ select Channel,
 	   sum(Spend) as total_spend,
 	   sum (Clicks)*1.0/sum(Impressions) as CTR,
 	   sum(Conversions) * 1.0/sum (Clicks) as CVR,
-	   sum(Spend) * 1.0/sum(Conversions) as CPC,
+	   sum(Spend) * 1.0/sum(Conversions) as CPA,
 	   sum(Conversions) * 100/sum(Spend) as ROAS
 from campaign 
 group by Channel;
