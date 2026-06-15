@@ -47,12 +47,32 @@ The dataset contains campaign performance data with the following fields:
 ## Tools & Technologies
 
 * Python
+* SQL Server Management Studio 
 * Pandas
 * Matplotlib
 * VS Code
 
 ---
 
+## SQL Analysis
+
+The dataset was imported into SQL Server using BULK INSERT.
+
+SQL was used to:
+
+- Calculate marketing KPIs (CTR, CVR, CPC, ROAS)
+- Analyze channel-level performance
+- Perform funnel analysis
+- Generate daily performance trends
+- Aggregate campaign metrics for reporting
+
+Key SQL Operations:
+- BULK INSERT
+- GROUP BY
+- Aggregate Functions (SUM)
+- KPI Calculations
+- Trend Analysis
+  
 ## Key Performance Indicators (KPIs)
 
 ### CTR (Click Through Rate)
