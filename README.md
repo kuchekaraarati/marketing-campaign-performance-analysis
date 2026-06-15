@@ -129,6 +129,77 @@ This helps identify channel effectiveness and potential drop-off points within t
 * Daily Spend Trend
 * Clicks vs Conversions by Channel
 
+# Visualizations
+
+## 1. CTR by Channel
+
+![CTR by Channel](screenshots/CTR%20by%20Channel.png)
+
+## Insight
+Google Search achieved a higher CTR (5.09%) than Meta Ads (4.33%), indicating stronger user engagement.
+
+---
+
+## 2. CVR by Channel
+
+![CVR by Channel](screenshots/CVR%20by%20Channel.png)
+
+## Insight
+Meta Ads achieved a higher CVR (12.8%) than Google Search (8.6%), demonstrating better conversion efficiency.
+
+---
+
+## 3. CPA by Channel
+
+![CPA by Channel](screenshots/CPA%20by%20Channel.png)
+
+## Insight
+Meta Ads recorded a lower CPA (6.41) than Google Search (7.03), making it more cost-efficient for acquiring customers.
+
+---
+
+## 4. ROAS by Channel
+
+![ROAS by Channel](screenshots/ROAS%20by%20Channel.png)
+
+## Insight
+Meta Ads delivered a higher ROAS (15.61) compared to Google Search (14.22), generating stronger returns on ad spend.
+
+---
+
+## 5. Daily Click Trend
+
+![Daily Click Trend](screenshots/Daily%20click%20Trend.png)
+
+## Insight
+The trend shows how user engagement changed throughout the campaign period and helps identify peak traffic days.
+
+---
+
+## 6. Daily Conversion Trend
+
+![Daily Conversion Trend](screenshots/Daily%20Conversion%20Trend.png)
+
+## Insight
+Daily conversion tracking helps evaluate campaign effectiveness and identify high-performing periods.
+
+---
+
+## 7. Daily Spend Trend
+
+![Daily Spend Trend](screenshots/Daily%20Spend%20Trend.png)
+
+## Insight
+Monitoring daily spend helps determine whether increased investment leads to better campaign outcomes.
+
+---
+
+## 8. Clicks vs Conversions by Channel
+
+![Clicks vs Conversions](screenshots/Click%20vs%20Conversions%20by%20channel.png)
+
+## Insight
+Google Search generated more clicks, while Meta Ads converted a higher percentage of users, highlighting differences in channel performance.
 ---
 
 ## Channel Performance Summary
